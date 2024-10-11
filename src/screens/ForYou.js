@@ -2,19 +2,21 @@ import React from "react";
 import { View, Button, Text } from "react-native";
 import styled from "styled-components";
 
-const Main = ({ route }) => {
-	// const { initial } = route.params;
-
+const ForYou = ({ route }) => {
 	return (
 		<Container>
-			<Text>The main page</Text>
+			<Text style={styledText}>For you</Text>
 		</Container>
 	);
 };
 
-export default Main;
+export default ForYou;
 
 const Container = styled.View`
-	background-color: white;
+	background-color: black;
 	flex: 1;
+`;
+
+const styledText = styled.Text`
+	color: white;
 `;
