@@ -7,7 +7,7 @@ const Profile = ({ route }) => {
 
 	return (
 		<Container>
-			<Text>The profile page</Text>
+			<BodyText>The profile page</BodyText>
 		</Container>
 	);
 };
@@ -15,6 +15,10 @@ const Profile = ({ route }) => {
 export default Profile;
 
 const Container = styled.View`
-	background-color: white;
+	background-color: #0f0f0f;
 	flex: 1;
+`;
+
+const BodyText = styled.Text`
+	color: white;
 `;

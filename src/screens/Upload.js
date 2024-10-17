@@ -7,7 +7,7 @@ const Upload = ({ route }) => {
 
 	return (
 		<Container>
-			<Text>The Upload page</Text>
+			<BodyText>The Upload page</BodyText>
 		</Container>
 	);
 };
@@ -15,6 +15,10 @@ const Upload = ({ route }) => {
 export default Upload;
 
 const Container = styled.View`
-	background-color: white;
+	background-color: #0f0f0f;
 	flex: 1;
+`;
+
+const BodyText = styled.Text`
+	color: white;
 `;
