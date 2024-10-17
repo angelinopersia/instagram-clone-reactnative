@@ -2,21 +2,23 @@ import React from "react";
 import { View, Button, Text } from "react-native";
 import styled from "styled-components";
 
-const ForYou = ({ route }) => {
+const Search = ({ route }) => {
+	// const { initial } = route.params;
+
 	return (
 		<Container>
-			<Text style={styledText}>For you</Text>
+			<BodyText>The Search page</BodyText>
 		</Container>
 	);
 };
 
-export default ForYou;
+export default Search;
 
 const Container = styled.View`
-	background-color: black;
+	background-color: #0f0f0f;
 	flex: 1;
 `;
 
-const styledText = styled.Text`
+const BodyText = styled.Text`
 	color: white;
 `;
