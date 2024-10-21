@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Button, Text } from "react-native";
+import { StatusBar } from "react-native";
 import styled from "styled-components";
 
 const Profile = ({ route }) => {
@@ -7,6 +7,7 @@ const Profile = ({ route }) => {
 
 	return (
 		<Container>
+			<StatusBar backgroundColor="#13181b" />
 			<BodyText>The profile page</BodyText>
 		</Container>
 	);
@@ -15,7 +16,6 @@ const Profile = ({ route }) => {
 export default Profile;
 
 const Container = styled.View`
-	background-color: #0f0f0f;
 	flex: 1;
 `;
 

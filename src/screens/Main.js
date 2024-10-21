@@ -1,9 +1,5 @@
 import * as React from "react";
-import { DarkTheme, NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { createStackNavigator } from "@react-navigation/stack";
-import { StatusBar } from "react-native";
-import { TouchableOpacity } from "react-native";
 import styled from "styled-components";
 
 // Import screens
@@ -25,7 +21,6 @@ import profileIcon from "../images/footer/profile.png";
 import profileIconFocused from "../images/footer/profile_focus.png";
 
 const Tab = createBottomTabNavigator();
-const Stack = createStackNavigator();
 
 export default function Main({ navigation }) {
 	// This acts as a footer

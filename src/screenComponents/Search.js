@@ -1,13 +1,14 @@
 import React from "react";
-import { View, Button, Text } from "react-native";
+import { StatusBar } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import styled from "styled-components";
 
 const Search = ({ route }) => {
-	// const { initial } = route.params;
-
 	return (
 		<Container>
+			<StatusBar backgroundColor="#13181b" />
 			<BodyText>The Search page</BodyText>
+			<SafeAreaView style={{ backgroundColor: "black" }}></SafeAreaView>
 		</Container>
 	);
 };
@@ -15,7 +16,6 @@ const Search = ({ route }) => {
 export default Search;
 
 const Container = styled.View`
-	background-color: #0f0f0f;
 	flex: 1;
 `;
 
